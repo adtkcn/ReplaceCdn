@@ -53,6 +53,7 @@ chrome.webRequest.onBeforeRequest.addListener(
     // cdnjs全部转到360 cdn
     // 360 前端静态资源库是由奇舞团支持并维护的开源项目免费 CDN 服务，支持 HTTPS 和 HTTP/2，囊括上千个前端资源库和 Google 字体库。
     url = url.replace("cdnjs.cloudflare.com/ajax/libs", "lib.baomitu.com");
+    url = url.replace("libs.cdnjs.net", "lib.baomitu.com");
 
     return { redirectUrl: url };
   },
@@ -68,6 +69,7 @@ chrome.webRequest.onBeforeRequest.addListener(
       "*://cdnjs.cloudflare.com/*",
       "*://pixijs.download/*",
       "*://stackoverflow.com/*",
+      "*://libs.cdnjs.net/*",
     ],
   },
   ["blocking"]
