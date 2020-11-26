@@ -13,12 +13,14 @@ https://github.com/justjavac/ReplaceGoogleCDN
 此插件/扩展包括：
 
 1. `ajax.googleapis.com` - 前端公共库
-1. `fonts.googleapis.com` - 免费字体库
-1. `themes.googleusercontent.com` - fonts 有时会使用到这个里面的资源
-1. `fonts.gstatic.com` - 免费字体库
-1. `www.google.com/recaptcha` - Google 图像验证库
-1. `secure.gravatar.com` - gravatar 头像
-1. `cdnjs.cloudflare.com` cndjs 转到 lib.baomitu.com
+2. `fonts.googleapis.com` - 免费字体库
+3. `themes.googleusercontent.com` - fonts 有时会使用到这个里面的资源
+4. `fonts.gstatic.com` - 免费字体库
+5. `www.google.com/recaptcha` - Google 图像验证库
+6. `secure.gravatar.com` - gravatar 头像
+7. `cdnjs.cloudflare.com` 转到 lib.baomitu.com
+8. `code.jquery.com/jquery` 转到 lib.baomitu.com/jquery/latest/jquery.min.js
+9. `pixijs.download/dev/pixi.min.js` 转到 lib.baomitu.com/pixi.js/latest/pixi.min.js
 
 ## 安装
 
@@ -33,4 +35,4 @@ https://github.com/justjavac/ReplaceGoogleCDN
 > 4. 选择 Load unpacked extension... 然后定位到刚才解压的文件夹里面的 chrome 目录，确定
 > 5. 这就安装好了，去掉 Developer Mode 勾选。
 
-# 火狐没动
+# 火狐暂时没试过
