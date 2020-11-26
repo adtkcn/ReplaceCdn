@@ -1,17 +1,15 @@
 {
-    "name": "Replace CDN",
-    "version": "0.6.0",
-    "manifest_version": 2,
-    "icons": {
-      "128": "icons/128.png"
-    },
-    "description": "国外 CDN 替换为国内镜像，cdnjs转360cdn",
-    "background": {
-        "scripts": ["js/background.js"]
-    },
-    "permissions": [
-        "webRequest", "webRequestBlocking", "<all_urls>"
-    ],
-    "author": "https://github.com/justjavac",
-    "homepage_url": "https://github.com/justjavac/ReplaceGoogleCDN"
+	"name": "Replace CDN",
+	"version": "0.6.0",
+	"manifest_version": 2,
+	"icons": {
+		"128": "icons/128.png"
+	},
+	"description": "国外CDN替换为国内镜像，cloudflare,cdnjs,jquery,pixijs转360 cdn,解决某些js不能加载或过慢的问题",
+	"background": {
+		"scripts": ["js/background.js"]
+	},
+	"permissions": ["webRequest", "webRequestBlocking", "<all_urls>"],
+	"author": "https://github.com/adtkcn",
+	"homepage_url": "https://github.com/adtkcn/ReplaceCdn"
 }
