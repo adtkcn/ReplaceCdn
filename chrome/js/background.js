@@ -39,7 +39,6 @@ chrome.webRequest.onBeforeRequest.addListener(
 			"www.google.com/recaptcha/",
 			"www.recaptcha.net/recaptcha/"
 		);
-		url = url.replace("secure.gravatar.com", "gravatar.loli.net");
 
 		if (url.indexOf("code.jquery.com/jquery-") != -1) {
 			url = "https://lib.baomitu.com/jquery/latest/jquery.min.js";
@@ -52,11 +51,27 @@ chrome.webRequest.onBeforeRequest.addListener(
 			"cdnjs.cloudflare.com/ajax/libs/gsap/",
 			"cdn.staticfile.org/gsap/"
 		);
+		url = url.replace("secure.gravatar.com", "gravatar.loli.net");
+
+
+		if (url.indexOf("code.jquery.com/jquery-") != -1) {
+			url = "https://lib.baomitu.com/jquery/3.5.1/jquery.min.js";
+		}
+
+		// url = url.replace(
+		// 	"pixijs.download/dev/pixi.min.js",
+		// 	"lib.baomitu.com/pixi.js/5.4.0-rc.2/browser/pixi.min.js"
+		// );
+		// url = url.replace(
+		// 	"www.pixijs.com/js/pixi.min.js",
+		// 	"lib.baomitu.com/pixi.js/5.4.0-rc.2/browser/pixi.min.js"
+		// );
 
 		// cdnjs全部转到360 cdn
 		// 360 前端静态资源库是由奇舞团支持并维护的开源项目免费 CDN 服务，支持 HTTPS 和 HTTP/2，囊括上千个前端资源库和 Google 字体库。
 		url = url.replace("cdnjs.cloudflare.com/ajax/libs", "lib.baomitu.com");
 		url = url.replace("libs.cdnjs.net", "lib.baomitu.com");
+		url = url.replace("oss.maxcdn.com/libs/", "cdn.bootcdn.net/ajax/libs/");
 
 		return { redirectUrl: url };
 	},
@@ -73,6 +88,8 @@ chrome.webRequest.onBeforeRequest.addListener(
 			"*://pixijs.download/*",
 			"*://stackoverflow.com/*",
 			"*://libs.cdnjs.net/*",
+			"*://oss.maxcdn.com/*",
+			"*://www.pixijs.com/*",
 		],
 	},
 	["blocking"]

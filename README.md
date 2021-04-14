@@ -20,7 +20,6 @@ https://github.com/justjavac/ReplaceGoogleCDN
 6. `secure.gravatar.com` - gravatar 头像
 7. `cdnjs.cloudflare.com` 转到 lib.baomitu.com
 8. `code.jquery.com/jquery` 转到 lib.baomitu.com/jquery/latest/jquery.min.js
-9. `pixijs.download/dev/pixi.min.js` 转到 lib.baomitu.com/pixi.js/latest/pixi.min.js
 
 ## 安装
 
