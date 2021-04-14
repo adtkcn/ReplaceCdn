@@ -48,6 +48,10 @@ chrome.webRequest.onBeforeRequest.addListener(
 			"pixijs.download/dev/pixi.min.js",
 			"lib.baomitu.com/pixi.js/latest/pixi.min.js"
 		);
+		url = url.replace(
+			"cdnjs.cloudflare.com/ajax/libs/gsap/",
+			"cdn.staticfile.org/gsap/"
+		);
 
 		// cdnjs全部转到360 cdn
 		// 360 前端静态资源库是由奇舞团支持并维护的开源项目免费 CDN 服务，支持 HTTPS 和 HTTP/2，囊括上千个前端资源库和 Google 字体库。
